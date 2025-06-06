@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url('../imagens/fundo-madeira.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+}
+
+#telefone{
+    height: 627px;
+    width: 311px; 
+    /* aqui é 311x627 pra ficar do tamanho total da imagem do telefone
+        basta abrir a imagem com um editor de foto (GIMP, PS, padrão do OS etc) e ver as propriedades da imagem*/
+
+    /* atenção nesse bloco aqui */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* entendi pouco e ele falou que já aprendeu.
+            vale muito ir pesquisar e me aprofundar porque faz parte de responsividade*/
+
+    background: url('../imagens/frame-iphone.png');
+    background-repeat: no-repeat;
+}
